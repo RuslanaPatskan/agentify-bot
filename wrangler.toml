@@ -1,0 +1,13 @@
+name = "agentify-bot"
+main = "worker.js"
+compatibility_date = "2024-09-04"
+
+# KV namespace для зберігання сесій
+# Після створення KV namespace замінити id нижче
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "REPLACE_WITH_YOUR_KV_ID"
+
+# Змінні середовища задаються через Cloudflare Dashboard
+# або через: wrangler secret put TELEGRAM_TOKEN
+# НЕ вписуй токени тут!
